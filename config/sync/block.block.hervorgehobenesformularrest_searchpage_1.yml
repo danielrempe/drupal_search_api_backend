@@ -1,0 +1,29 @@
+uuid: 13af8485-5600-487c-ae9a-63c753af0784
+langcode: de
+status: true
+dependencies:
+  config:
+    - views.view.rest_search
+  module:
+    - system
+    - views
+  theme:
+    - bartik
+id: hervorgehobenesformularrest_searchpage_1
+theme: bartik
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'views_exposed_filter_block:rest_search-page_1'
+settings:
+  id: 'views_exposed_filter_block:rest_search-page_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+visibility:
+  request_path:
+    id: request_path
+    pages: "/search\r\n/search/*"
+    negate: false
+    context_mapping: {  }

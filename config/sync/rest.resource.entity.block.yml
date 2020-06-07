@@ -1,0 +1,18 @@
+uuid: 73e88a50-ffd4-47ee-88f1-38e2ee0b66f5
+langcode: de
+status: false
+dependencies:
+  module:
+    - block
+    - serialization
+    - user
+id: entity.block
+plugin_id: 'entity:block'
+granularity: resource
+configuration:
+  methods:
+    - GET
+  formats:
+    - json
+  authentication:
+    - cookie

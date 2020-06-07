@@ -1,0 +1,45 @@
+uuid: 5e8b8837-113e-4875-9fd6-32092ad0ca14
+langcode: de
+status: true
+dependencies:
+  module:
+    - search_api
+_core:
+  default_config_hash: LqXAZO_yZPho3Pueh85e-NzQ3DmI5rNBf6_q8McKUqc
+id: search-api-index-processors
+label: 'Prozessoren, die für diesen Index verwendet werden'
+module: search_api
+routes:
+  -
+    route_name: entity.search_api_index.processors
+tips:
+  search-api-index-processors-introduction:
+    id: search-api-index-processors-introduction
+    plugin: text
+    label: 'Prozessoren, die für diesen Index verwendet werden'
+    body: 'Prozessoren passen verschiedene Aspekte der Funktionalität eines Index an. Sie können verhindern, dass Elemente indiziert werden, ändern, wie bestimmte Felder indiziert werden und die Suche beeinflussen.'
+    weight: 1
+  search-api-index-processors-enable:
+    id: search-api-index-processors-enable
+    plugin: text
+    label: 'Prozessoren aktivieren'
+    body: 'Hier werden alle für diesen Index verfügbaren Prozessoren aufgelistet. Zu aktivierende Prozessoren können hier ausgewählt werden. (Hinweis: Einige Prozessoren können nicht deaktiviert werden.)'
+    weight: 2
+    attributes:
+      data-id: edit-status
+  search-api-index-processors-weights:
+    id: search-api-index-processors-weights
+    plugin: text
+    label: Prozessorreihenfolge
+    body: 'Dies zeigt die aktivierten Prozessoren, die in den verschiedenen Teilen des Indexierungs-/Suchworkflows aktiv sind, und ermöglicht eine Neuanordnung dieser. Dies sollte in der Regel nicht notwendig sein und nur von fortgeschrittenen Benutzern verwendet werden, da einige Prozessoren bei Verwendung in der falschen Reihenfolge zu unerwarteten Ergebnissen führen.'
+    weight: 3
+    attributes:
+      data-id: edit-weights
+  search-api-index-processors-settings:
+    id: search-api-index-processors-settings
+    plugin: text
+    label: Prozessoreinstellungen
+    body: 'Einige Prozessoren stellen zusätzliche Konfigurationen zur Verfügung. Diese Konfigurationen können hier angepasst werden.'
+    weight: 4
+    attributes:
+      data-class: form-type-vertical-tabs

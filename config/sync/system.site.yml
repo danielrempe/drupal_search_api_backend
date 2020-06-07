@@ -1,0 +1,14 @@
+uuid: 38cc1f75-68fc-4ac6-b943-8e51bb78d8a9
+name: 'Search API Backend'
+mail: info@rempeweb.net
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: de
+default_langcode: de
+_core:
+  default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE

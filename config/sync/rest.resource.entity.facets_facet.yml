@@ -1,0 +1,18 @@
+uuid: 0bb73570-b3af-401f-a22c-0f22e536773b
+langcode: de
+status: true
+dependencies:
+  module:
+    - facets
+    - serialization
+    - user
+id: entity.facets_facet
+plugin_id: 'entity:facets_facet'
+granularity: resource
+configuration:
+  methods:
+    - GET
+  formats:
+    - json
+  authentication:
+    - cookie

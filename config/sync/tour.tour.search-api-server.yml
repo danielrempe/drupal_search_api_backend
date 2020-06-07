@@ -1,0 +1,53 @@
+uuid: 2ccc15da-3db0-49bc-9f5f-8f00b5b0144c
+langcode: de
+status: true
+dependencies:
+  module:
+    - search_api
+_core:
+  default_config_hash: j-YgGnx-C5I3OTFsDsNkTyPC8zH7ZQyBMvmZ6gUMH3Q
+id: search-api-server
+label: 'Informationen über einen Server'
+module: search_api
+routes:
+  -
+    route_name: entity.search_api_server.canonical
+tips:
+  search-api-server-introduction:
+    id: search-api-server-introduction
+    plugin: text
+    label: 'Informationen über einen Server'
+    body: 'Diese Seite zeigt die Zusammenfassung eines Suchservers an.'
+    weight: 1
+  search-api-server-status:
+    id: search-api-server-status
+    plugin: text
+    label: Status
+    body: 'Zeigt an, ob der Server aktuell aktiviert oder deaktiviert ist.'
+    weight: 2
+    attributes:
+      data-class: search-api-server-summary--status
+  search-api-server-backend:
+    id: search-api-server-backend
+    plugin: text
+    label: Backend-Klasse
+    body: 'Das Backend-Plugin, das für diesen Server verwendet wird. Das Backend-Plugin bestimmt, wie Elemente indiziert und durchsucht werden - z.B. über die Datenbank oder einen Apache Solr-Server.'
+    weight: 3
+    attributes:
+      data-class: search-api-server-summary--backend
+  search-api-server-indexes:
+    id: search-api-server-indexes
+    plugin: text
+    label: Suchindexe
+    body: 'Listet jeden Index auf, der sich auf dem Server befindet.'
+    weight: 4
+    attributes:
+      data-class: search-api-server-summary--indexes
+  search-api-server-clear:
+    id: search-api-server-clear
+    plugin: text
+    label: 'Alle indizierten Daten löschen'
+    body: 'Dadurch werden alle Daten, die derzeit auf diesem Server für Indizes, die nicht schreibgeschützt sind, dauerhaft entfernt. Elemente werden für die Neuindizierung in die Warteschlange gestellt. Bis zur Neuindizierung liefert die Suche nach den betroffenen Begriffen keine Ergebnisse.'
+    weight: 5
+    attributes:
+      data-id: edit-clear

@@ -1,0 +1,12 @@
+uuid: c040794e-491e-4394-b4c9-30de04e2abac
+langcode: en
+status: true
+dependencies: {  }
+id: search_api__views_rest__rest_search__rest_export_1
+name: 'search_api:views_rest__rest_search__rest_export_1'
+filter_key: search_rest
+url_processor: query_string
+breadcrumb:
+  active: false
+  before: true
+  group: false

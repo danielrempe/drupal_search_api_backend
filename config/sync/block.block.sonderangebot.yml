@@ -1,0 +1,29 @@
+uuid: 5993e566-77d1-4bfe-946e-0676661d1b27
+langcode: de
+status: true
+dependencies:
+  config:
+    - facets.facet.sonderangebot
+  module:
+    - facets
+    - system
+  theme:
+    - bartik
+id: sonderangebot
+theme: bartik
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'facet_block:sonderangebot'
+settings:
+  id: 'facet_block:sonderangebot'
+  label: Sonderangebot
+  provider: facets
+  label_display: visible
+  block_id: sonderangebot
+visibility:
+  request_path:
+    id: request_path
+    pages: "/search\r\n/search/*\r\n/entity/block/*"
+    negate: false
+    context_mapping: {  }
